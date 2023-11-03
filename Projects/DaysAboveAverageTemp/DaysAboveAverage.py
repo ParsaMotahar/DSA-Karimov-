@@ -11,11 +11,6 @@ def AveAndDays(temps):
 
 
 
-
-
-
-
-
 for i in range(1, UserDays+1):
     userTemp  = int(input(f'Please enter the high for day {i}:\n'))
     temps.append(userTemp)
