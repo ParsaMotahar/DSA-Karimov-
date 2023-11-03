@@ -3,6 +3,7 @@
 myList = [1, 2, 3, 4]
 middle(myList)  # [2,3]
     '''
+    
 MyList = [1,2,3,4,5]
 def RemoveFirstAndLast(lis):
     del lis[0]
