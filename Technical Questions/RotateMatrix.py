@@ -15,7 +15,6 @@ import numpy as np
 def transpose(matrix):
     for i in range(len(matrix)):
         for j in range(i, len(matrix)):
-            print("Switch", i, j, "with", j, i)
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
     return matrix
 matrix = np.array([[1,2,3], [4,5,6], [7,8,9]])
