@@ -15,6 +15,11 @@ import numpy as np
 def transpose(matrix):
     for i in range(len(matrix)):
         for j in range(i, len(matrix)):
+
+            '''The second for loops start at i because this
+            ensures that we skip over the cells that
+            has already been flipped'''
+            
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
     return matrix
 matrix = np.array([[1,2,3], [4,5,6], [7,8,9]])
