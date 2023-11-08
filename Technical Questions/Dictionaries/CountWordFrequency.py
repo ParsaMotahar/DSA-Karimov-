@@ -16,8 +16,6 @@ words = ['apple', 'orange', 'banana', 'apple', 'orange', 'apple']
 def count_word_frequency(words):
     counts = {}
     for word in words:
-        counts.setdefault(word, 0)
-    for word in words:
         counts[word] = counts.get(word, 0) + 1
     return counts
 print(count_word_frequency(words))
